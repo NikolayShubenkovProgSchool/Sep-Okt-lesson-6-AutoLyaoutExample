@@ -31,11 +31,12 @@
     NSParameterAssert(self.shwarcImage);
     NSLog(@"priority before: %f",[self.shwarcImage contentCompressionResistancePriorityForAxis:UILayoutConstraintAxisVertical]);
     
-    
     [self.shwarcImage setContentCompressionResistancePriority:stronger ? 780 : 600
                                                       forAxis:UILayoutConstraintAxisVertical];
-    [self.view setNeedsUpdateConstraints];
-    [self.shwarcImage setNeedsUpdateConstraints];
+    [self.shwarcImage setContentCompressionResistancePriority:stronger ? 780 : 600
+                                                      forAxis:UILayoutConstraintAxisHorizontal];
+    
+    
     [self.view layoutIfNeeded];
     NSLog(@"priority after: %f",[self.shwarcImage contentCompressionResistancePriorityForAxis:UILayoutConstraintAxisVertical]);
     

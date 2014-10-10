@@ -1,25 +1,132 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ezv-A9-v6Y">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="HfU-1B-N5R">
+            <objects>
+                <viewController id="h4R-Qe-53j" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oVd-Mt-1Ii"/>
+                        <viewControllerLayoutGuide type="bottom" id="m3R-Ss-Sc6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QPX-I9-PMa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nn8-Gw-NaN" userLabel="Orange View">
+                                <rect key="frame" x="16" y="28" width="136" height="240"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yob-zF-qKS" userLabel="Green View">
+                                <rect key="frame" x="169" y="28" width="135" height="240"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nn8-Gw-NaN" firstAttribute="leading" secondItem="QPX-I9-PMa" secondAttribute="leadingMargin" id="0M2-Se-R4Z"/>
+                            <constraint firstItem="nn8-Gw-NaN" firstAttribute="width" secondItem="yob-zF-qKS" secondAttribute="width" id="5kd-OC-75q"/>
+                            <constraint firstItem="yob-zF-qKS" firstAttribute="leading" secondItem="nn8-Gw-NaN" secondAttribute="trailing" constant="17" id="Dtf-u2-yq5"/>
+                            <constraint firstItem="yob-zF-qKS" firstAttribute="trailing" secondItem="QPX-I9-PMa" secondAttribute="trailingMargin" id="Fvr-FP-Yeu"/>
+                            <constraint firstItem="nn8-Gw-NaN" firstAttribute="height" secondItem="yob-zF-qKS" secondAttribute="height" id="Rt0-o9-WTk"/>
+                            <constraint firstItem="nn8-Gw-NaN" firstAttribute="centerY" secondItem="yob-zF-qKS" secondAttribute="centerY" id="tZO-9e-eR5"/>
+                            <constraint firstItem="nn8-Gw-NaN" firstAttribute="top" secondItem="oVd-Mt-1Ii" secondAttribute="bottom" constant="8" id="y7b-PV-9yu"/>
+                            <constraint firstItem="nn8-Gw-NaN" firstAttribute="height" secondItem="QPX-I9-PMa" secondAttribute="height" multiplier="0.5" id="zp7-NZ-Med"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="qiq-dM-TEl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5d-yf-QNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-454" y="936"/>
+        </scene>
         <!--View Controller-->
+        <scene sceneID="i6K-c6-eXW">
+            <objects>
+                <viewController id="EaQ-qS-aYA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dbo-zp-UKe"/>
+                        <viewControllerLayoutGuide type="bottom" id="H0L-W3-jKW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="spo-zA-Wiq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tqa-tm-QU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-176" y="837"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQo-in-Pdm" userLabel=" White View">
+                                <rect key="frame" x="36" y="40" width="248" height="420"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk5-fy-1VH">
+                                        <rect key="frame" x="194" y="382" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Kk5-fy-1VH" firstAttribute="bottom" secondItem="TQo-in-Pdm" secondAttribute="bottomMargin" id="Avd-3m-PRb"/>
+                                    <constraint firstItem="Kk5-fy-1VH" firstAttribute="trailing" secondItem="TQo-in-Pdm" secondAttribute="trailingMargin" id="tZh-6W-AaN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.48627450979999998" green="0.69803921570000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TQo-in-Pdm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="2Hz-9g-0s4"/>
+                            <constraint firstItem="TQo-in-Pdm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="mTm-k8-rtp"/>
+                            <constraint firstAttribute="bottom" secondItem="TQo-in-Pdm" secondAttribute="bottom" constant="20" symbolic="YES" id="u7K-1a-t9i"/>
+                            <constraint firstItem="TQo-in-Pdm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wz9-M4-gnH"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="dUk-GR-sKA"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="383" y="233"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yAa-Jk-pCK">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ezv-A9-v6Y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bmc-Sp-mD0">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="uxM-vi-kjy"/>
+                        <segue destination="h4R-Qe-53j" kind="relationship" relationship="viewControllers" id="vid-WY-UPy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRf-DQ-klf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-508" y="205"/>
         </scene>
     </scenes>
 </document>

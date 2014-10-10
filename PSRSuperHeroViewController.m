@@ -31,13 +31,28 @@
     NSParameterAssert(self.shwarcImage);
     NSLog(@"priority before: %f",[self.shwarcImage contentCompressionResistancePriorityForAxis:UILayoutConstraintAxisVertical]);
     
+    
     [self.shwarcImage setContentCompressionResistancePriority:stronger ? 780 : 600
                                                       forAxis:UILayoutConstraintAxisVertical];
     [self.shwarcImage setContentCompressionResistancePriority:stronger ? 780 : 600
                                                       forAxis:UILayoutConstraintAxisHorizontal];
     
-    
-    [self.view layoutIfNeeded];
+//    [UIView animateWithDuration:0.25
+//                     animations:^{
+//                         //иногда помимо layoutifneded нужно добавить такой метод
+//                         [self.view updateConstraintsIfNeeded];
+//                         [self.view layoutIfNeeded];
+//                     }];
+    //
+    [UIView animateWithDuration:0.8
+                          delay:0
+         usingSpringWithDamping:0.4
+          initialSpringVelocity:0.5
+                        options:UIViewAnimationOptionCurveEaseIn animations:^{
+                            
+                            [self.view updateConstraintsIfNeeded];
+                            [self.view layoutIfNeeded];
+                        } completion:nil];
     NSLog(@"priority after: %f",[self.shwarcImage contentCompressionResistancePriorityForAxis:UILayoutConstraintAxisVertical]);
     
 }

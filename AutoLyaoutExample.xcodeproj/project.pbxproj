@@ -15,6 +15,9 @@
 		FEC063FA19E843990020BD15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC063F819E843990020BD15 /* LaunchScreen.xib */; };
 		FEC0640619E843990020BD15 /* AutoLyaoutExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0640519E843990020BD15 /* AutoLyaoutExampleTests.m */; };
 		FEC0641119E850790020BD15 /* PSRTextsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0641019E850790020BD15 /* PSRTextsViewController.m */; };
+		FEC0641819E857C90020BD15 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEC0641619E857C90020BD15 /* 123.jpg */; };
+		FEC0641919E857C90020BD15 /* 321.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEC0641719E857C90020BD15 /* 321.jpg */; };
+		FEC0641C19E859F10020BD15 /* PSRSuperHeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0641B19E859F10020BD15 /* PSRSuperHeroViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,10 @@
 		FEC0640519E843990020BD15 /* AutoLyaoutExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLyaoutExampleTests.m; sourceTree = "<group>"; };
 		FEC0640F19E850790020BD15 /* PSRTextsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRTextsViewController.h; sourceTree = "<group>"; };
 		FEC0641019E850790020BD15 /* PSRTextsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRTextsViewController.m; sourceTree = "<group>"; };
+		FEC0641619E857C90020BD15 /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
+		FEC0641719E857C90020BD15 /* 321.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 321.jpg; sourceTree = "<group>"; };
+		FEC0641A19E859F10020BD15 /* PSRSuperHeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRSuperHeroViewController.h; sourceTree = "<group>"; };
+		FEC0641B19E859F10020BD15 /* PSRSuperHeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRSuperHeroViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +73,10 @@
 		FEC063DD19E843980020BD15 = {
 			isa = PBXGroup;
 			children = (
+				FEC0641A19E859F10020BD15 /* PSRSuperHeroViewController.h */,
+				FEC0641B19E859F10020BD15 /* PSRSuperHeroViewController.m */,
+				FEC0641619E857C90020BD15 /* 123.jpg */,
+				FEC0641719E857C90020BD15 /* 321.jpg */,
 				FEC0640F19E850790020BD15 /* PSRTextsViewController.h */,
 				FEC0641019E850790020BD15 /* PSRTextsViewController.m */,
 				FEC063E819E843990020BD15 /* AutoLyaoutExample */,
@@ -204,8 +215,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC0641819E857C90020BD15 /* 123.jpg in Resources */,
 				FEC063F519E843990020BD15 /* Main.storyboard in Resources */,
 				FEC063FA19E843990020BD15 /* LaunchScreen.xib in Resources */,
+				FEC0641919E857C90020BD15 /* 321.jpg in Resources */,
 				FEC063F719E843990020BD15 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +240,7 @@
 				FEC063F219E843990020BD15 /* ViewController.m in Sources */,
 				FEC063EF19E843990020BD15 /* AppDelegate.m in Sources */,
 				FEC063EC19E843990020BD15 /* main.m in Sources */,
+				FEC0641C19E859F10020BD15 /* PSRSuperHeroViewController.m in Sources */,
 				FEC0641119E850790020BD15 /* PSRTextsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,7 @@
 		FEC063F719E843990020BD15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC063F619E843990020BD15 /* Images.xcassets */; };
 		FEC063FA19E843990020BD15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC063F819E843990020BD15 /* LaunchScreen.xib */; };
 		FEC0640619E843990020BD15 /* AutoLyaoutExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0640519E843990020BD15 /* AutoLyaoutExampleTests.m */; };
+		FEC0641119E850790020BD15 /* PSRTextsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0641019E850790020BD15 /* PSRTextsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FEC063FF19E843990020BD15 /* AutoLyaoutExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLyaoutExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC0640419E843990020BD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEC0640519E843990020BD15 /* AutoLyaoutExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLyaoutExampleTests.m; sourceTree = "<group>"; };
+		FEC0640F19E850790020BD15 /* PSRTextsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRTextsViewController.h; sourceTree = "<group>"; };
+		FEC0641019E850790020BD15 /* PSRTextsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRTextsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		FEC063DD19E843980020BD15 = {
 			isa = PBXGroup;
 			children = (
+				FEC0640F19E850790020BD15 /* PSRTextsViewController.h */,
+				FEC0641019E850790020BD15 /* PSRTextsViewController.m */,
 				FEC063E819E843990020BD15 /* AutoLyaoutExample */,
 				FEC0640219E843990020BD15 /* AutoLyaoutExampleTests */,
 				FEC063E719E843990020BD15 /* Products */,
@@ -222,6 +227,7 @@
 				FEC063F219E843990020BD15 /* ViewController.m in Sources */,
 				FEC063EF19E843990020BD15 /* AppDelegate.m in Sources */,
 				FEC063EC19E843990020BD15 /* main.m in Sources */,
+				FEC0641119E850790020BD15 /* PSRTextsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

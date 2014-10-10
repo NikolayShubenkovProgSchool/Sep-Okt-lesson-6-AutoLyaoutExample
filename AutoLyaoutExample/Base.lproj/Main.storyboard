@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ezv-A9-v6Y">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -46,23 +45,50 @@
             </objects>
             <point key="canvasLocation" x="-454" y="936"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="i6K-c6-eXW">
             <objects>
-                <viewController id="EaQ-qS-aYA" sceneMemberID="viewController">
+                <viewController id="EaQ-qS-aYA" customClass="PSRTextsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dbo-zp-UKe"/>
                         <viewControllerLayoutGuide type="bottom" id="H0L-W3-jKW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="spo-zA-Wiq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cno-oA-0Nb">
+                                <rect key="frame" x="135" y="66" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label  oiavaeil " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xY6-M8-cNX">
+                                <rect key="frame" x="36" y="28" width="248" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="xY6-M8-cNX" secondAttribute="centerX" id="0Ve-qO-qds"/>
+                            <constraint firstItem="xY6-M8-cNX" firstAttribute="top" secondItem="dbo-zp-UKe" secondAttribute="bottom" constant="8" id="L07-sc-DLH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xY6-M8-cNX" secondAttribute="trailing" constant="20" id="MbO-0d-zWS"/>
+                            <constraint firstItem="cno-oA-0Nb" firstAttribute="centerX" secondItem="xY6-M8-cNX" secondAttribute="centerX" constant="-2" id="dSL-en-FfQ"/>
+                            <constraint firstItem="cno-oA-0Nb" firstAttribute="top" secondItem="xY6-M8-cNX" secondAttribute="bottom" constant="17" id="fcK-pb-X0j"/>
+                            <constraint firstItem="xY6-M8-cNX" firstAttribute="leading" secondItem="spo-zA-Wiq" secondAttribute="leadingMargin" constant="20" id="l3x-ff-Nu6"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9GZ-OF-nHb"/>
+                    <connections>
+                        <outlet property="button" destination="cno-oA-0Nb" id="rUq-K4-3yg"/>
+                        <outlet property="someTextLabel" destination="xY6-M8-cNX" id="j9V-7p-Kwq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tqa-tm-QU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-176" y="837"/>
+            <point key="canvasLocation" x="12" y="682"/>
         </scene>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
@@ -120,6 +146,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="EaQ-qS-aYA" kind="relationship" relationship="viewControllers" id="EVy-u6-pDI"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="uxM-vi-kjy"/>
                         <segue destination="h4R-Qe-53j" kind="relationship" relationship="viewControllers" id="vid-WY-UPy"/>
                     </connections>
